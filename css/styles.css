@@ -83,7 +83,7 @@ h2, .cars h2,
 
 img {
     max-width: 100%;
-    width: auto\9;
+    width: auto;
     height: auto;
     vertical-align: middle;
     border: 0;
@@ -278,6 +278,9 @@ li {
     text-shadow: 0 1px 0 rgba(255,255,255,0.95);
 }
 
+.row-fluid .span3 {
+    width: 12.04083486%;
+}
 h3{
     font-size: 15px;
     margin: 9px 0;
@@ -301,14 +304,15 @@ h3{
 
 .ses .vehicleData {
     font-size: 12px;
+    font-family: 'Changa One';
 }
 
 .content .ses ul li .vehicleData .vehicleImage {
-    max-width: 150px;
+    max-width: 100%;
 }
 
 .content .ses ul li .vehicleData .vehicleImage div img {
-    max-height: 75px;
+    max-height: 100%;
     max-width: 100%;
 }
 
@@ -316,9 +320,7 @@ h3{
     margin-left: 0;
 }
 
-.row-fluid .span3 {
-    width: 12.04083486%;
-}
+
 
 .row-fluid [class*="span"] {
     display: block;
@@ -340,6 +342,9 @@ h3{
     margin-left: 10px;
 }
 
+.pull-right {
+    float: right;
+}
 
 .content .ses ul li .vehicleData .vehicleImage div {
     margin-left: 15px;
@@ -348,6 +353,10 @@ h3{
     max-height: 75px;
     text-align: center;
     padding: 1px;
+}
+
+.row-fluid .span3 {
+    width: 12.04083486%;
 }
 
 .content .ses ul li .vehicleData .right {
@@ -370,9 +379,7 @@ h3{
 .content .ses ul li .vehicleData .vehiclePrice {
     text-align: right;
 }
-.pull-right {
-    float: right;
-}
+
 
 .content .ses ul li .vehicleData .vehiclePrice strong {
     color: #282828;
@@ -391,12 +398,23 @@ h3{
     font-size: 26px;
 }
 strong {
-    font-weight: bold;
+    font-weight: 400;
+    font-size: 1em;
 }
 
 strong, b {
-    font-weight: bold;
+    font-weight: 400;
+    font-size: 1em;
 }
+
+.knowledge {
+  background-color: tomato;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+  display: inline-block;
+  }
 
 .content .ses ul li .vehicleData .vehiclePrice span {
     font-weight: bold;
@@ -451,21 +469,741 @@ small {
 }
 
 .content .ses ul li .vehicleData div.fuelConsumption {
-    margin-left: 0;
+    margin-left: 10%;
 }
 
 .content .ses ul li .vehicleData div.fuelConsumption span {
     margin: 5px 0 0 4px;
 }
 
+/* Car1 --------------- */
 
+.des h3 {
+    line-height: 25px;
+    margin: 0;
+    color: #282828;
+    text-shadow: 1px 1px 0 #fff;
+    border-bottom: 1px solid #c3c3c3;
+    padding-left: 10px;
+    background-color: #e4e4e4;
+    background-image: -moz-linear-gradient(top, #e1e1e1, #d7d7d7 45%, #dadada 70%, #f0f0f0);
+    background-image: -ms-linear-gradient(top, #e1e1e1, #d7d7d7 45%, #dadada 70%, #f0f0f0);
+    background-image: -o-linear-gradient(top, #e1e1e1, #d7d7d7 45%, #dadada 70%, #f0f0f0);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #e1e1e1), color-stop(45%, #d7d7d7), color-stop(70%, #dadada), color-stop(100%, #f0f0f0));
+    background-image: -webkit-linear-gradient(top, #e1e1e1, #d7d7d7 45%, #dadada 70%, #f0f0f0);
+    background-image: linear-gradient(top, #e1e1e1, #d7d7d7 45%, #dadada 70%, #f0f0f0);
+    background-repeat: no-repeat;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e1e1e1', endColorstr='#f0f0f0', GradientType=0);
+}
+
+.des .vehicleDetails {
+    padding: 15px 0 15px 0;
+    text-shadow: 1px 1px 0 #fff;
+}
+
+.des .vehicleDetails .right {
+    float: none;
+}
+.des .vehicleDetails .printImg {
+    display: none !important;
+}
+
+.galleryWrapper {
+    margin: 0 15px 0 15px;
+    width: 295px;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    border: 2px solid #ddd;
+}
+
+.des .vehicleDetails .right .vehiclePrice {
+    float: right;
+    text-align: right;
+    margin-left: 0;
+    color: #282828;
+}
+
+.des .vehicleDetails .right .vehiclePrice strong, .des .vehicleDetails .right .vehiclePrice small, .des .vehicleDetails .right .vehiclePrice span, .des .vehicleDetails .right .vehiclePrice s {
+    display: block;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.des .vehicleDetails .right .vehiclePrice strong {
+    line-height: 32px;
+    height: auto;
+}
+
+.des .vehicleDetails .right .vehiclePrice span.vatRate {
+    color: #898989;
+    font-style: italic;
+}
+
+.des .vehicleDetails .right .vehicleAttributes {
+    min-height: 145px;
+}
+
+.des .vehicleDetails .right .vehicleAttributes .left {
+    float: left;
+    width: 20%;
+}
+.des .vehicleDetails .right .vehicleAttributes .vehicleSeals {
+    padding-top: 50px;
+}
+
+.des .vehicleDetails .right {
+    margin-right: 20px;
+    text-align: right;
+}
+
+.des .vehicleTechDetails, .des .vehicleFeatures, .des .vehicleDescription {
+    color: #505050;
+    text-shadow: 1px 1px 0 #fff;
+}
+
+.des .vehicleTechDetails h4, .des .vehicleFeatures h4, .des .vehicleDescription h4 {
+    margin: 20px 0;
+    padding-left: 2.5%;
+    font-size: 1.17em;
+}
+
+.des .vehicleTechDetails dl.additionalAttributes {
+    margin: 0;
+    float: left;
+}
+
+.row-fluid .span10 {
+    width: 48.20780498%;
+}
+
+.span10 {
+    width: 410px;
+}
+
+
+dl {
+    margin-bottom: 18px;
+}
+
+dl {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.des .vehicleTechDetails dl.additionalAttributes dt {
+    padding-left: 15px;
+    width: 48%;
+    clear: left;
+}
+
+.des .vehicleTechDetails dl.additionalAttributes dt, .des .vehicleTechDetails dl.additionalAttributes dd {
+    font-weight: normal;
+    display: inline-block;
+}
+
+dt, dd {
+    line-height: 18px;
+}
+
+dt {
+    font-weight: bold;
+}
+dt {
+    display: block;
+}
+
+.des .vehicleTechDetails dl.additionalAttributes dd {
+    width: 44%;
+}
+
+dd {
+    margin-left: 9px;
+}
+dd {
+    display: block;
+    -webkit-margin-start: 40px;
+}
+
+.des .vehicleTechDetails dl.fuelConsumption {
+    margin: 0;
+    float: right;
+}
+
+h4{
+    margin: 9px 0;
+    font-family: inherit;
+    font-weight: bold;
+    line-height: 1;
+    color: inherit;
+    text-rendering: optimizelegibility;
+}
+
+h4 {
+    display: block;
+    -webkit-margin-before: 1.33em;
+    -webkit-margin-after: 1.33em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+.des .vehicleFeatures strong {
+    display: block;
+    padding-left: 15px;
+}
+
+.des .vehicleFeatures .genericFeatures, .des .vehicleFeatures .interiorFeatures, .des .vehicleFeatures .exteriorFeatures, .des .vehicleFeatures .extrasFeatures, .des .vehicleFeatures .securityFeatures {
+    margin-left: 0;
+}
+
+.des .vehicleFeatures .genericFeatures ul, .des .vehicleFeatures .interiorFeatures ul, .des .vehicleFeatures .exteriorFeatures ul, .des .vehicleFeatures .extrasFeatures ul, .des .vehicleFeatures .securityFeatures ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.des .vehicleTechDetails ul, .des .vehicleFeatures ul, .des .vehicleDescription ul {
+    margin: 0 0 0 25px;
+}
+
+ul, ol {
+    padding: 0;
+    margin: 0 0 9px 25px;
+}
+
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+.des .vehicleDescription div {
+    margin: 0;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+.row-fluid .span22 {
+    width: auto;
+}
+
+.span22 {
+    width: 914px;
+}
+
+.row-fluid .span8 {
+    width: 32.87438495%;
+}
+
+
+
+
+.flexslider .slides .slideWrapper {
+    position: relative;
+    line-height: 250px !important;
+    vertical-align: middle;
+    text-align: center;
+    width: auto;
+}
+
+.flexslider {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    min-height: 252px;
+    max-height: 252px;
+    background: #ddd;
+    border: none;
+    zoom: 1;
+}
+
+
+.slides, .flex-control-nav, .flex-direction-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.slides li.slide.Small, ul.slides li.slide.Large {
+    margin: 0 !important;
+}
+
+.flexslider .slides>li {
+    display: none;
+    -webkit-backface-visibility: hidden;
+}
+
+.flex-control-nav {
+    width: 100%;
+    position: absolute;
+    bottom: -50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+flex-control-nav li {
+    margin: 0 5px;
+    display: inline-block;
+    zoom: 1;
+}
+
+.default .flex-control-paging li a.flex-active {
+    background: #383838;
+}
+
+.flex-control-paging li a.flex-active {
+    cursor: default;
+}
+
+.flex-control-paging li a {
+    width: 7px;
+    height: 7px;
+    display: block;
+    background: #505050;
+    background: rgba(0,0,0,0.5);
+    cursor: pointer;
+    text-indent: -9999px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    background-clip: padding-box;
+    -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+}
+
+a {
+    outline: 0;
+    -moz-outline: 0;
+}
+
+a {
+    color: #7f7f7f;
+    text-decoration: none;
+}
+
+.default .flex-direction-nav .flex-prev {
+    border-right: 22px solid #383838;
+}
+
+.flex-direction-nav .flex-prev {
+    left: -36px;
+}
+
+
+
+
+
+
+.des .vehicleDetails .right .vehicleAttributes .left strong.bodyType {
+    line-height: 18px;
+}
+
+.des .vehicleDetails .right .vehicleAttributes .left strong {
+    display: block;
+    font-weight: bold;
+    color: #505050;
+}
+
+.des .vehicleDetails .right .vehicleAttributes .left strong.usageType {
+    line-height: 18px;
+    margin-bottom: 14px;
+}
+
+.des .vehicleDetails .right .vehiclePrice span {
+    font-weight: bold;
+    line-height: 22px;
+}
+
+.des .vehicleDetails .right .vehicleAttributes .left span.attributes {
+    margin-bottom: 10px;
+}
+
+.des .vehicleDetails .right .vehicleAttributes .left span {
+    display: block;
+}
+
+
+
+.visible-phone {
+    display: none !important;
+}
+
+.default .slider .es-nav span.es-nav-prev {
+    border-right: 10px solid #383838;
+}
+
+
+
+
+
+[class^="icon-"], [class*=" icon-"] {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    vertical-align: text-top;
+    background-image: url("../images/glyphicons-halflings.png");
+    background-position: 14px 14px;
+    background-repeat: no-repeat;
+    margin-top: 1px;
+}
+
+i, cite, em, var, address, dfn {
+    font-style: italic;
+}
+
+.des .vehicleDetails .right .parkMessage {
+    display: none;
+    padding: 5px 15px;
+    text-align: left;
+}
+
+.des .vehicleDetails .right , .des .vehicleDetails .right {
+    /*color: #fff;*/
+    padding: 5px 70px;
+    margin-bottom: 20px;
+}
+
+.des .vehicleTechDetails dl.fuelConsumption dt, .des .vehicleTechDetails dl.fuelConsumption dd {
+    font-weight: normal;
+    display: inline-block;
+}
+
+.des .vehicleTechDetails dl.fuelConsumption dt {
+    padding-left: 15px;
+    width: 48%;
+    clear: left;
+}
+
+.des .vehicleTechDetails dl.fuelConsumption dd {
+    width: 44%;
+}
+
+a.addtooltip {
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.span8 {
+    width: 326px;
+}
+
+.des .vehicleFeatures .genericFeatures ul li, .des .vehicleFeatures .interiorFeatures ul li, .des .vehicleFeatures .exteriorFeatures ul li, .des .vehicleFeatures .extrasFeatures ul li, .des .vehicleFeatures .securityFeatures ul li {
+    padding-left: 15px;
+}
+
+.des .envkvInfoText {
+    padding: 15px;
+    color: #898989;
+}
+
+.envkvInfoText {
+    font-size: 11px;
+}
+.default .headline {
+    border-bottom: 1px solid #797979 !important;
+}
+
+.headline {
+    border-top: 1px solid #fff;
+    background-color: #d5d5d5;
+    background-image: -moz-linear-gradient(top, #cccccc, #f1f1f1 15%, #fafafa 21%, #fafafa);
+    background-image: -ms-linear-gradient(top, #cccccc, #f1f1f1 15%, #fafafa 21%, #fafafa);
+    background-image: -o-linear-gradient(top, #cccccc, #f1f1f1 15%, #fafafa 21%, #fafafa);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #cccccc), color-stop(15%, #f1f1f1), color-stop(21%, #fafafa), color-stop(100%, #fafafa));
+    background-image: -webkit-linear-gradient(top, #cccccc, #f1f1f1 15%, #fafafa 21%, #fafafa);
+    background-image: linear-gradient(top, #cccccc, #f1f1f1 15%, #fafafa 21%, #fafafa);
+    background-repeat: no-repeat;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#fafafa', GradientType=0);
+}
+
+.headline h2 a {
+    color: #505050;
+}
+
+
+.content div.contact {
+    border-bottom: 1px solid #c3c3c3;
+    background-color: #efefef;
+    background-image: -moz-linear-gradient(top, #efefef, #efefef 50%, #f0f0f0 95%, #f0f0f0);
+    background-image: -ms-linear-gradient(top, #efefef, #efefef 50%, #f0f0f0 95%, #f0f0f0);
+    background-image: -o-linear-gradient(top, #efefef, #efefef 50%, #f0f0f0 95%, #f0f0f0);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #efefef), color-stop(50%, #efefef), color-stop(95%, #f0f0f0), color-stop(100%, #f0f0f0));
+    background-image: -webkit-linear-gradient(top, #efefef, #efefef 50%, #f0f0f0 95%, #f0f0f0);
+    background-image: linear-gradient(top, #efefef, #efefef 50%, #f0f0f0 95%, #f0f0f0);
+    background-repeat: no-repeat;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#efefef', endColorstr='#f0f0f0', GradientType=0);
+    color: #505050;
+    text-shadow: 1px 1px 0 #fff;
+    padding-bottom: 50px;
+}
+
+.row-fluid .span12 {
+    width: 49.54122501%;
+}
+
+.span12 {
+    width: 494px;
+}
+
+address {
+    display: block;
+    margin-bottom: 18px;
+    font-style: normal;
+    line-height: 18px;
+}
+
+.content div.contact address span.dealerType, .content div.contact address strong.dealerType, .content div.contact address a.dealerType, .content div.contact address .dealerContactNumbers.dealerType {
+    padding-top: 0;
+}
+
+.content div.contact address span, .content div.contact address strong, .content div.contact address a, .content div.contact address .dealerContactNumbers {
+    display: block;
+    padding: 15px 80px 15px 15px;
+}
+
+.content div.contact address strong {
+    padding-bottom: 0;
+}
+
+.content div.contact address span.spokenLanguages, .content div.contact address strong.spokenLanguages, .content div.contact address a.spokenLanguages, .content div.contact address .dealerContactNumbers.spokenLanguages {
+    padding-top: 30px;
+}
+
+.listof {
+    margin: 0 auto;
+    padding: 10px 10px;
+    display: inline-flex;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: black;
+    list-style: none;
+    width: 100%;
+}
+
+.digital {
+    float: right;
+}
+
+.languages, .digital {
+    width: 46.5%;
+}
+
+.languages {
+    float: left;
+}
+
+
+.content div.contact .name label {
+    color: #282828;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+label {
+    cursor: default;
+}
+
+
+
+
+.row-fluid .span24 {
+    width: 99.54174521%;
+}
+
+input.span24, textarea.span24, .uneditable-input.span24 {
+    width: 984px;
+}
+
+
+.span24 {
+    width: 998px;
+}
+
+.content div.contact .errorMessage {
+    display: none;
+}
+
+.footer .row-fluid .outer {
+    padding: 10px 0 20px 0;
+}
+
+.footer .row-fluid .outer .link-bar {
+    float: none;
+    text-align: right;
+    margin: 0;
+}
+
+.footer .row-fluid .outer .link-bar ul.links {
+    color: #FFFFFF;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.footer .row-fluid .outer .link-bar ul.links li {
+    display: inline;
+    padding: 0 10px 0 10px;
+}
+
+footer {
+    font-size: .9em;
+    text-align: center;
+    clear: both;
+    padding-top: 50px;
+    color: lightblack;
+    background: linear-gradient(#ffa949, transparent 70%), linear-gradient(180deg, #fff, transparent), #ffa949;
+}
+
+.footer .row-fluid .outer .link-bar ul.links li>a {
+    margin-right: 15px;
+    color: #505050;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.75);
+}
+
+hr {
+    border-top: 1px solid #c3c3c3;
+    border-bottom: 1px solid #fff;
+    margin: 0 0 10px 0;
+    width: 100%;
+}
+
+hr {
+    margin: 18px 0;
+    border: 0;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #fff;
+}
+hr {
+    display: block;
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.5em;
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+.footer .row-fluid .outer address {
+    padding: 15px 0 0 15px;
+}
+
+.footer .row-fluid .outer address strong {
+    display: block;
+    line-height: 20px;
+}
+
+.footer address strong {
+    font-size: 15px;
+}
+
+.knowledge-image {
+    margin-top: 20px;
+    width: 150px;
+    height: 90px;
+    border-radius: 5px;
+    border: 2px solid white;
+    padding: 0;
+  }
+
+
+
+.footer .row-fluid .outer .mobileInfo {
+    text-align: center;
+}
+
+
+.default .slider .es-nav span.es-nav-next {
+    border-left: 10px solid #383838;
+}
+
+.footer .row-fluid .outer .mobileInfo .mobileLogo {
+    margin: 30px 0 10px 0;
+}
+.footer .row-fluid .outer .mobileInfo .mobileLogo a, .footer .row-fluid .outer .mobileInfo .mobileLogo a:hover {
+    color: #505050;
+    text-decoration: underline;
+}
+
+.slider .es-nav span.es-nav-next {
+    right: 2px;
+    left: auto;
+}
+
+.footer .row-fluid .outer .mobileInfo {
+    font-weight: bold;
+}
+
+
+
+
+
+
+/* Car1 Pseudo ----------- */
+.row-fluid:before, .row-fluid:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+.row-fluid:after {
+    clear: both;
+}
+
+/* Car1 Media ----------- */
+
+@media (min-width: 1024px) {
+.flex-control-paging {
+    display: none;
+}
+
+@media (min-width: 768px) {
+.footer .row-fluid [class*="span"] {
+    margin-left: 0;
+}
+.footer .row-fluid .outer hr.secondSeperator {
+    display: none;
+}
+
+.knowledge-image {
+     margin-top: 20px;
+     width: 500px;
+     height: 375.939850px;
+     border-radius: 5px;
+     border: 3px solid white;
+     padding: 0;
+   }
+
+.footer .row-fluid .outer .link-bar ul.links li.li-recommend {
+    display: none;
+}
+
+@media (min-width: 481px) {
+.footer .row-fluid .outer .link-bar ul.links li.li-recommend {
+    display: inline;
+}
 /* Footer ----------- */
 
 footer {
   font-size: .9em;
   text-align: center;
   clear: both;
-  padding-top: 50px;
+  padding-top: 10px;
   color: lightblack;
   background: linear-gradient(#ffa949, transparent 70%),
               linear-gradient(180deg, #fff, transparent), #ffa949;
@@ -502,6 +1240,19 @@ footer {
 }
 
 }
+
+@media screen and (min-width: 720px) {
+.listof {
+    margin: 0 auto;
+    padding: 10px 10px;
+    display: inline-flex;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: black;
+    list-style: none;
+    width: 100%;
+}
+
 @media (min-width: 768px) {
 
 
